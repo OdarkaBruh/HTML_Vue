@@ -1,0 +1,18 @@
+<html lang="ua">
+<head>
+    <title>VUE HTML</title>
+    <meta charset="UTF-8">
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+</head>
+    <h1> Hello</h1>
+    <div id="app">
+        <input v-model="myInput" placeholder="edit me" />
+
+        <li v-for="item in filteredList()">
+            <label>{{item.name}}<br /></label>
+            <label> • {{item.salary}} • {{item.companyName}} • {{item.adress}} • <br /></label>
+            <label>{{item.description}}<br /><br /></label>
+        </li>
+    </div>
+    <script src="app.js"></script>
+</html>
